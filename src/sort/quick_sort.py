@@ -1,6 +1,6 @@
 from random import shuffle
 
-from generate_data import generate
+from src.helper_generate_data import generate
 
 
 def quick_sort_it(data):

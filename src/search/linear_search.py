@@ -1,7 +1,7 @@
 from random import sample
 from typing import Any, List
 
-from generate_data import generate
+from src.helper_generate_data import generate
 
 
 def busca_linear(data: List[Any], target: Any) -> int:

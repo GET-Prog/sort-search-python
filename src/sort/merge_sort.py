@@ -1,7 +1,7 @@
 from random import shuffle
 from typing import Any, List
 
-from generate_data import generate
+from src.helper_generate_data import generate
 
 
 def set_merge_sort(data: List[Any]):
