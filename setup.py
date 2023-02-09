@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Union
 
-from setuptools import find_packages, setup
+from setuptools import find_packages, setup  # type: ignore
 
 
 def open_txt(filename: Union[str, Path]) -> str:

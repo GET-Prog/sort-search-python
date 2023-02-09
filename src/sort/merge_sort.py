@@ -2,9 +2,11 @@ from random import shuffle
 from typing import Any, List
 
 from src.helper_generate_data import generate
+from src.helper_timer import timing
 
 
-def set_merge_sort(data: List[Any]):
+@timing
+def merge_sort_it(data: List[Any]):
     zero_array = [0] * len(data)
     merge_sort(data, zero_array, 0, len(data) - 1)
 
@@ -50,5 +52,5 @@ if __name__ == "__main__":
     data = generate(50)
     shuffle(data)
     print(data, "\n")
-    set_merge_sort(data)
+    merge_sort_it(data)
     print(data)
