@@ -1,15 +1,20 @@
 from random import shuffle
+from typing import Any, List
 
 from src.helper_generate_data import generate
+from src.helper_timer import timing
 
 
-def quick_sort_it(data):
+@timing
+def quick_sort_it(data: List[Any]) -> List[Any]:
     len_data = len(data)
     if len_data > 0:
         quick_sort(data, 0, len_data - 1)
 
+    return data
 
-def quick_sort(data, start, end):
+
+def quick_sort(data: List[Any], start: int, end: int):
     if start > end:
         return
 
@@ -42,5 +47,5 @@ if __name__ == "__main__":
     data = generate(50)
     shuffle(data)
     print(data, "\n")
-    quick_sort_it(data)
+    data = quick_sort_it(data)
     print(data)

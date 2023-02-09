@@ -16,6 +16,6 @@ if __name__ == "__main__":
     data = generate(1000)
     target = sample(data, 1)[0]
 
-    print(f"Buscando por {target}")
+    print(f"Buscando por {target} em uma lista de tamanho {len(data)}")
     idx = busca_linear(data, target)
     print(f"Item {data[idx]} foi localizado na posição {idx}")
